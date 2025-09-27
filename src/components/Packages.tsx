@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Check, Zap, Star, Crown, MessageCircle } from "lucide-react";
 
 const Packages = () => {
-  const phoneNumber = "5511999999999"; // Número editável
+  const phoneNumber = "5511921265421"; // Número editável
 
   const openWhatsApp = (packageType: string) => {
     const message = packageType === 'standard' 

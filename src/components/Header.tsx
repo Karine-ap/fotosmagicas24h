@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const phoneNumber = "5511999999999"; // Número editável
+  const phoneNumber = "5511921265421"; // Número editável
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Mail, Clock, Shield } from "lucide-react";
 
 const Footer = () => {
-  const phoneNumber = "5511999999999"; // Número editável
+  const phoneNumber = "5511921265421"; // Número editável
   const currentYear = new Date().getFullYear();
 
   return (

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const FloatingWhatsApp = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "5511999999999"; // Número editável
+  const phoneNumber = "5511921265421"; // Número editável
 
   useEffect(() => {
     const timer = setTimeout(() => {
