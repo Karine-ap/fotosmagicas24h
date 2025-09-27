@@ -1,27 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Clock, Award } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-
 const Hero = () => {
   const phoneNumber = "5511921265421"; // Número editável
 
   const scrollToPackages = () => {
     const element = document.getElementById('packages');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section 
-      className="relative min-h-screen flex items-center justify-center pt-20"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+  return <section className="relative min-h-screen flex items-center justify-center pt-20" style={{
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}>
       <div className="container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <div className="animate-float">
@@ -32,25 +28,16 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Aumente suas vendas com imagens profissionais de alta resolução. 
-            <strong> Comprovadamente aumenta conversões em até 75%</strong>
+            <strong> 
+Mais faturamento para o seu negócio: até 75% de crescimento comprovado</strong>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              variant="hero" 
-              size="xl"
-              onClick={scrollToPackages}
-              className="w-full sm:w-auto"
-            >
+            <Button variant="hero" size="xl" onClick={scrollToPackages} className="w-full sm:w-auto">
               Ver Pacotes
               <ArrowRight className="ml-2" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="xl"
-              onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Olá! Gostaria de um orçamento personalizado para meu projeto`, '_blank')}
-              className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary"
-            >
+            <Button variant="outline" size="xl" onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Olá! Gostaria de um orçamento personalizado para meu projeto`, '_blank')} className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
               Orçamento Personalizado
             </Button>
           </div>
@@ -75,8 +62,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
